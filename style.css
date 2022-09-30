@@ -1,1 +1,76 @@
 /* CSS File */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Caveat';
+    gap: 30px;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    box-shadow: 5px 5px 5px 5px rgba(53, 53, 53, 0.219);
+
+}
+.row{
+    flex-grow: 1;
+    width: 600px;
+    display: flex;
+
+
+}
+
+.column{
+    flex-grow: 1;
+}
+
+/* options */
+.options-container{
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+}
+
+.btn-options{
+    display: flex;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+.erase,
+.rainbow,
+.erase:active,
+.rainbow:focus{
+    font-size: 20px;
+    font-family: 'Caveat';
+    border-radius: 6px;
+    width: 100px;
+}
+
+.erase,
+.rainbow{
+    border: white solid;
+    color: white;
+    background-color: black;
+}
+
+.erase:active,
+.rainbow:focus{
+    border: black solid 2px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.color-container,
+.slide-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

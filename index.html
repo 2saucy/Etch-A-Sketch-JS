@@ -5,18 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
     <title>Etch-A-Sketch</title>
 </head>
 <body>
     <header>
-        <h1>Etch-A-Sketch</h1>
+        <h1>ETCH-A-SKETCH</h1>
     </header>
+    <div class="options-container">
+        <div class="btn-options">
+            <button class="erase" onclick="erase()">Erase</button>
+            <button class="rainbow" onclick="changeColor('rainbow')">Rainbow</button>
+        </div>
+        <div class="color-container">
+            <p>Color Picker</p>
+            <input type="color" name="Color Picker" id="color-picker" oninput="changeColor('color-picker')">
+        </div>
+        <div class="slide-container">
+            <p>Change pixels</p>
+            <input type="range" min="16" max="100" id="range-slider" value="16" oninput="reloadGrid()">
+        </div>
+    </div>
     <div class="container">
 
     </div>
     <footer>
-        <p>My footer</p>
+        <p>Footer text here</p>
     </footer>
 </body>
 </html>
